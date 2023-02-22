@@ -1,0 +1,31 @@
+MDScreen:
+    name:"main"
+    MDFloatLayout:
+        md_bg_color: 1, 1, 1, 1
+        Image:
+            source:"b12.jpg"
+            size_hint: .8, .5
+            pos_hint: {'center_x': .5,'center_y': .8}
+        MDLabel:
+            text:"digite aqui"
+            font_name:"C:/Windows/Fonts/ARIAL.TTF"
+            font_size: "35sp"
+            pos_hint:{"center_x": .9, "center_y": .61}
+            haling:"center"
+            theme_text_color: "Custom"
+            text_color: 53/255, 56/255, 60/255, 1
+        Button:
+            text:'Começar'
+            size_hint: .45,.08
+            pos_hint: {'center_x': .5,'center_y': .1}
+            background_color: 1,1,1,1
+            on_release: 
+                root.manager.transition.direction = "left"
+                root.manager.current = "chats"
+        MDLabel:
+            text: "lets chat"
+            haling: "center"
+            pos_hint: {'center_y': .1}
+            font_size: "18sp"
+            color: 1,1,.5
+        
